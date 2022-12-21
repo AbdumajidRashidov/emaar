@@ -1,0 +1,18 @@
+@mixin backgroundBlur($color) {
+  background-color: $color;
+  backdrop-filter: blur(7.5px);
+}
+
+@mixin input {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 9px 10px 12px 10px;
+  color: $primary-text;
+  border: none;
+  border-bottom: 1px solid rgba(7, 28, 53, 0.1);
+  margin-right: 20px;
+  background-color: transparent;
+}

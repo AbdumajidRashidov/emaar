@@ -1,0 +1,182 @@
+.map {
+  display: flex;
+  justify-content: flex-end;
+  &-wrapper {
+    width: 90%;
+    max-height: 890px;
+    .map-img {
+      background-image: url("../images/map.png");
+      background-repeat: no-repeat;
+      width: 100%;
+      overflow: hidden;
+      height: 890px;
+      h2 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 44px;
+        line-height: 120%;
+        text-transform: uppercase;
+        color: $primary-text;
+        max-width: 457px;
+        position: relative;
+        top: 170px;
+      }
+      .emaar-south {
+        position: relative;
+        top: 405px;
+        left: 360px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 150px;
+        cursor: pointer;
+        p {
+          text-align: center;
+          margin-bottom: 10px;
+        }
+        .target {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          background-color: $brand-color;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .inner {
+            width: 20px;
+            border: 5px solid #ffffff;
+            border-radius: 50%;
+            padding: 10px;
+          }
+        }
+        &-card {
+          opacity: 0;
+          transition: all 0.3s ease;
+          transform: translateY(-100px);
+          position: absolute;
+          background-color: $white-color;
+          img {
+            max-width: 200px;
+            max-height: 120px;
+            object-fit: cover;
+            width: 100%;
+          }
+          p {
+            width: 150px;
+            text-align: center;
+            margin: 10px auto;
+          }
+        }
+        &:hover > .emaar-south-card {
+          opacity: 1;
+          transform: translateY(-80px);
+        }
+      }
+      .dubai-hills {
+        position: relative;
+        top: -10px;
+        left: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 150px;
+        cursor: pointer;
+        p {
+          text-align: center;
+          margin-bottom: 10px;
+        }
+        .target {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          background-color: $brand-color;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .inner {
+            width: 20px;
+            border: 5px solid #ffffff;
+            border-radius: 50%;
+            padding: 10px;
+          }
+        }
+        &-card {
+          opacity: 0;
+          transition: all 0.3s ease;
+          transform: translateY(-100px);
+          position: absolute;
+          background-color: $white-color;
+          img {
+            max-width: 200px;
+            max-height: 120px;
+            width: 100%;
+            object-fit: cover;
+          }
+          p {
+            width: 150px;
+            text-align: center;
+            margin: 10px auto;
+          }
+        }
+        &:hover > .dubai-hills-card {
+          opacity: 1;
+          transform: translateY(-80px);
+        }
+      }
+      .dubai-creek {
+        position: relative;
+        top: 160px;
+        left: 600px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 150px;
+        cursor: pointer;
+        p {
+          text-align: center;
+          margin-bottom: 10px;
+        }
+        .target {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          background-color: $brand-color;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .inner {
+            width: 20px;
+            border: 5px solid #ffffff;
+            border-radius: 50%;
+            padding: 10px;
+          }
+        }
+        &-card {
+          opacity: 0;
+          transition: all 0.3s ease;
+          transform: translateY(-100px);
+          position: absolute;
+          background-color: $white-color;
+          img {
+            max-width: 200px;
+            max-height: 120px;
+            width: 100%;
+            object-fit: cover;
+          }
+          p {
+            width: 150px;
+            text-align: center;
+            margin: 10px auto;
+          }
+        }
+        &:hover > .dubai-creek-card {
+          opacity: 1;
+          transform: translateY(-80px);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+.projects {
+  margin-bottom: 110px;
+  &__container {
+    padding: 0 70px;
+    margin-left: auto;
+    margin-right: auto;
+    h2 {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 54px;
+      line-height: 40px;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 50px;
+    }
+  }
+  &-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__item {
+      border: 1px solid rgba(7, 28, 53, 0.1);
+      padding: 15px;
+      img {
+        width: 100%;
+      }
+      .description {
+        position: absolute;
+        @include backgroundBlur(rgba(255, 255, 255, 0.85));
+        max-width: 390px;
+        transform: translateY(420px);
+        width: 100%;
+        padding: 22px 15px;
+        .title {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 25px;
+          line-height: 25px;
+          text-transform: uppercase;
+          color: $primary-text;
+          margin-bottom: 7px;
+        }
+        .prise {
+          font-family: "Lato";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19px;
+          text-transform: uppercase;
+          color: $primary-text;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1200px) {
+}
