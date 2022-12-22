@@ -1,0 +1,52 @@
+.payment {
+  margin-bottom: 250px;
+  &__container {
+    padding: 0 70px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__wrapper {
+    display: flex;
+    img {
+      max-width: 860px;
+      object-fit: cover;
+    }
+  }
+  &__card {
+    position: absolute;
+    @include backgroundBlur(rgba(255, 255, 255, 0.85));
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.07);
+    width: 610px;
+    transform: translate(600px, 220px);
+    padding: 50px 38px 0px 50px;
+    height: 387px;
+    h2 {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 50px;
+      line-height: 120%;
+      text-transform: uppercase;
+      color: $primary-text;
+      margin-bottom: 40px;
+    }
+    P {
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 24px;
+      color: $primary-text;
+    }
+    a {
+      border: 1px solid rgba(7, 28, 53, 0.15);
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      text-transform: uppercase;
+      color: #071c35;
+      padding: 11px 30px;
+    }
+  }
+}

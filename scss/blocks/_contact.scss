@@ -1,0 +1,55 @@
+.contact {
+  margin-bottom: 50px;
+  &__container {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 70px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__wrapper {
+    width: 65%;
+    h3 {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 44px;
+      line-height: 40px;
+      text-transform: uppercase;
+      color: $primary-text;
+      margin-bottom: 24px;
+    }
+    .we-are-online {
+      display: flex;
+      align-items: center;
+      margin-bottom: 50px;
+      p {
+        max-width: 434px;
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        color: $secondary-text;
+        margin-left: 35px;
+      }
+    }
+  }
+  &__form {
+    input {
+      @include input;
+      outline: none;
+    }
+    button {
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      text-transform: uppercase;
+      border: 1px solid rgba(7, 28, 53, 0.15);
+      color: #071c35;
+      background-color: $white-color;
+      padding: 11px 40px;
+    }
+  }
+}

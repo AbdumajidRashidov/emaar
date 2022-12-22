@@ -17,18 +17,22 @@
   &-list {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     &__item {
       border: 1px solid rgba(7, 28, 53, 0.1);
       padding: 15px;
+      margin-right: 20px;
+      a {
+        display: block;
+        height: 520px;
+      }
       img {
         width: 100%;
       }
       .description {
-        position: absolute;
+        position: relative;
         @include backgroundBlur(rgba(255, 255, 255, 0.85));
         max-width: 390px;
-        transform: translateY(420px);
+        transform: translateY(-100%);
         width: 100%;
         padding: 22px 15px;
         .title {
@@ -53,5 +57,133 @@
     }
   }
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1440px) {
+  .projects {
+    margin-bottom: 50px;
+    &-list {
+      &__item {
+        a {
+          max-height: 480px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .projects {
+    &__container {
+      padding: 0 20px;
+    }
+    &-list {
+      flex-wrap: wrap;
+      justify-content: center;
+      &__item {
+        margin-bottom: 20px;
+        height: 560px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .projects {
+    h2 {
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+    &-list {
+      &__item {
+        margin-bottom: 20px;
+        height: 560px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  .projects {
+    h2 {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+    &-list {
+      &__item {
+        height: 480px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .projects {
+    h2 {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+    &-list {
+      &__item {
+        height: 420px;
+        .description {
+          .title {
+            font-size: 20px;
+          }
+          .prise {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .projects {
+    h2 {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+    &-list {
+      &__item {
+        height: 420px;
+        .description {
+          .title {
+            font-size: 20px;
+          }
+          .prise {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 400px) {
+  .projects {
+    &-list {
+      &__item {
+        height: 400px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .projects {
+    &-list {
+      &__item {
+        height: 380px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .projects {
+    &-list {
+      &__item {
+        height: 350px;
+      }
+    }
+  }
 }
